@@ -7,8 +7,18 @@ export default function Intro() {
         Blog.
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        A incremental statically regenerated blog using{" "}
+        A{" "}
         <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration"
+        >
+          incremental statically regenerated
+        </a>{" "}
+        blog using{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://nextjs.org/"
           className="underline hover:text-success duration-200 transition-colors"
         >
@@ -16,6 +26,8 @@ export default function Intro() {
         </a>{" "}
         and{" "}
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href={CMS_URL}
           className="underline hover:text-success duration-200 transition-colors"
         >
