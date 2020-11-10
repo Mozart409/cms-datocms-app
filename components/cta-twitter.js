@@ -4,7 +4,7 @@ export default function ctaTwitter() {
       <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 md:text-4xl md:leading-10">
         <span className="block">Like my content?</span>
         <a href="https://twitter.com/marc_van_sax">
-          <span className="block text-indigo-600">Follow me on Twitter</span>
+          <span className="block text-indigo-600">Follow me on Twitter.</span>
         </a>
       </h2>
     </div>
