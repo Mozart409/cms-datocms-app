@@ -8,18 +8,21 @@ export default function Avatar({ name, picture }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="flex flex-no-wrap">
-          <motion.img
-            animate={{ scale: [0, 0.4, 1] }}
-            transition={{ ease: "easeOut", duration: 0.3 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
+        <motion.div
+          transition={{ ease: "easeOut", duration: 0.3 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{
+            scale: 0.97,
+          }}
+          className="flex flex-no-wrap"
+        >
+          <img
             src={picture.url}
             className="w-12 h-12 rounded-full mr-4"
             alt={name}
           />
           <span className="text-xl text-gray-500 pt-1.5 lg:pt-2">{name}</span>
-        </div>
+        </motion.div>
       </a>
     </div>
   );
